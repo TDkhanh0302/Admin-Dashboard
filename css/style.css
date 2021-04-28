@@ -1,0 +1,441 @@
+:root {
+    --grey-color: #9e9ea7;
+    --black-color: #2f2f2ffa;
+    --grey-blue-color: #f7f8fc;
+    --white-color: #ffffff;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+    font-family: 'Roboto', sans-serif;
+}
+
+.app {
+    display: flex;
+    flex-wrap: nowrap;
+    background: var(--grey-blue-color);
+}
+
+
+/* ---------slidebar---------- */
+.slidebar {
+    width: 18%;
+    padding: 3rem 2rem;
+    background: var(--white-color);
+}
+
+.nav {
+    margin-top: 4rem;
+    color: var(--grey-color);
+}
+
+.nav__link,
+.nav__title {
+    font-size: 1.5rem;
+}
+
+.nav__list {
+    margin-top: 2rem;
+}
+
+.nav__item {
+    list-style: none;
+    height: 4rem;
+    padding: 1rem 1.5rem;
+    border-radius: 15px;
+    position: relative;
+}
+
+.nav__item:hover {
+    background: var(--grey-blue-color);
+    cursor: pointer;
+    color: #6326f1;
+}
+
+.nav__item:hover .nav__link {
+    color: var(--black-color);
+    font-weight: 600;
+}
+
+.nav__item-icon {
+    font-size: 1.4rem;
+    margin-right: 1.5rem;
+}
+
+.nav__link {
+    text-decoration: none;
+    color: var(--grey-color);
+}
+
+.chat-notification {
+    width: 2rem;
+    height: 2rem;
+    border-radius: 5px;
+    background: #ff672d;
+    color: var(--white-color);
+    display: inline-block;
+    text-align: center;
+    padding-top: 0.4rem;
+    position: absolute;
+    right: 1rem;
+}
+
+.admin {
+    height: 6rem;
+    border-radius: 10px;
+    background: var(--grey-blue-color);
+    padding: 0.8rem;
+    position: relative;
+    bottom: -7rem;
+}
+
+.admin__avt {
+    width: 4rem;
+    height: 4rem;
+    border-radius: 10px;
+    background: #ff672d;
+    display: inline-block;
+}
+
+.admin__name {
+    position: absolute;
+    top: 1rem;
+    margin-left: 1.5rem;
+    color: var(--black-color);
+    font-weight: bold;
+    font-size: 1.3rem;
+}
+
+.position {
+    position: absolute;
+    bottom: 1rem;
+    margin-left: 1.5rem;
+    color: var(--grey-color);
+    font-size: 1.1rem;
+    font-weight: bold;
+}
+
+
+/* ----------main------------ */
+.main {
+    width: 55%;
+    padding: 4rem 3rem 0 4rem;
+    position: relative;
+}
+
+.heading {
+    font-size: 2.1rem;
+    font-weight: bold;
+    display: inline-block;
+}
+
+.btn {
+    position: absolute;
+    right: 3rem;
+    top: 3.5rem;
+    border: none;
+    height: 4rem;
+    padding: 0px 3rem;
+    border-radius: 15px;
+    color: var(--white-color);
+    font-size: 1.5rem;
+}
+
+.btn:hover {
+    cursor: pointer;
+}
+
+.btn--dark-blue {
+    background: #6326f1;
+}
+
+.portfolio {
+    margin-top: 3rem;
+    border-radius: 20px;
+    background: var(--white-color);
+    padding: 2.5rem 2rem 1rem 2rem;
+    position: relative;
+}
+
+.portfolio__view {
+    position: absolute;
+    right: 2rem;
+    font-size: 1.3rem;
+    font-weight: bold;
+}
+
+.portfolio__list {
+    margin-top: 1rem;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 1.5rem;
+}
+
+.portfolio__item {
+    width: 31%;
+}
+
+.portfolio__preview {
+    padding: 1rem;
+    height: 13rem;
+    border-radius: 10px;
+    background-image: linear-gradient(#ffc3a3, #f7f9fe);
+}
+
+.portfolio__preview img {
+    width: 100%;
+}
+
+.portfolio__sub {
+    font-size: 1.1rem;
+    font-weight: bold;
+    margin: 0.7rem 0.5rem;
+}
+
+.skills__list {
+    margin-top: 1rem;
+    display: inline-flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    height: 7.5rem;
+}
+
+.skill {
+    height: 3rem;
+    padding: 0.7rem 1rem;
+    font-size: 1.4rem;
+    color: var(--grey-color);
+    border-radius: 10px;
+    background: var(--grey-blue-color);
+}
+
+.candidate-profile {
+    display: flex;
+    justify-content: space-between;
+}
+
+.documents,
+.recommendation {
+    width: 47%;
+    background: var(--white-color);
+    border-radius: 20px;
+    padding: 2rem;
+    margin-top: 2rem;
+    display: inline-block;
+}
+
+.candidate {
+    height: 7rem;
+    position: relative;
+    margin-top: 1.5rem;
+}
+
+.candidate__avt {
+    width: 4rem;
+    height: 4rem;
+    border-radius: 10px;
+    background: #ff672d;
+    display: inline-block;
+}
+
+.candidate__name {
+    position: absolute;
+    top: 0.5rem;
+    margin-left: 1.5rem;
+    color: var(--black-color);
+    font-weight: bold;
+    font-size: 1.3rem;
+}
+
+.candidate__recommen {
+    position: absolute;
+    margin-top: 3rem;
+    margin-left: 1.5rem;
+    color: var(--grey-color);
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+
+.recommendation__view {
+    font-size: 1.2rem;
+    font-weight: bold;
+    margin-left: 5.5rem;
+}
+
+.document__item {
+    height: 6rem;
+    padding: 0.8rem;
+    position: relative;
+    margin-top: 1rem;
+}
+
+.document__item + .document__item {
+    margin-top: 0.5rem;
+}
+
+.document__icon {
+    width: 4rem;
+    height: 4rem;
+    font-size: 1.7rem;
+    border-radius: 10px;
+    color: #ff672d;
+    display: inline-block;
+    background: #ffe8e0;
+    text-align: center;
+    padding-top: 1rem;
+}
+
+.document__name {
+    position: absolute;
+    top: 1rem;
+    margin-left: 1.5rem;
+    color: var(--black-color);
+    font-weight: bold;
+    font-size: 1.3rem;
+}
+
+.document__capacity {
+    position: absolute;
+    bottom: 1rem;
+    margin-left: 1.5rem;
+    color: var(--grey-color);
+    font-size: 1.1rem;
+    font-weight: bold;
+}
+
+.icon-download {
+    position: absolute;
+    right: 1rem;
+    top: 2.5rem;
+    color: var(--grey-color);
+    font-size: 1.5rem;
+}
+
+
+/* -------personal--------- */
+.personal {
+    width: 27%;
+    padding: 4rem 4rem 0 1rem;
+}
+
+.personal-info {
+    padding: 2rem;
+    border-radius: 20px;
+    background: var(--white-color);
+}
+
+.personal-box {
+    position: relative;
+}
+
+.personal__avt {
+    width: 6rem;
+    height: 6rem;
+    border-radius: 15px;
+    display: inline-block;
+    background: #ff672d;
+}
+
+.personal__name {
+    position: absolute;
+    top: 1rem;
+    margin-left: 1.5rem;
+    color: var(--black-color);
+    font-weight: bold;
+    font-size: 1.8rem;
+}
+
+.personal__position {
+    position: absolute;
+    bottom: 1rem;
+    margin-left: 1.5rem;
+    color: var(--grey-color);
+    font-size: 1.3rem;
+    font-weight: bold;
+}
+
+.personal__recommen {
+    color: var(--grey-color);
+    font-size: 1.2rem;
+    font-weight: 500;
+    margin-top: 1rem;
+}
+
+.personal__link {
+    margin-top: 2rem;
+    padding: 0 1rem;
+    display: flex;
+    justify-content: space-around;
+}
+
+.personal__icon {
+    width: 4rem;
+    height: 4rem;
+    font-size: 1.7rem;
+    border-radius: 15px;
+    color: #ff672d;
+    display: inline-block;
+    background: #ffe8e0;
+    text-align: center;
+    padding-top: 1rem;
+}
+
+.experience {
+    padding: 2rem;
+    border-radius: 20px;
+    background: var(--white-color);
+    margin-top: 2rem;
+}
+
+.timeline {
+    margin-top: 2.5rem;
+    position: relative;
+    color: var(--grey-color);
+    font-size: 1.2rem;
+}
+
+.company {
+    font-size: 1.4rem;
+    font-weight: bold;
+    color: var(--black-color);
+}
+
+.icon-google {
+    color: crimson;
+    margin-right: 0.5rem;
+}
+
+.icon-facebook {
+    color: #2196f3;
+    margin-right: 0.5rem;
+}
+
+.icon-diamond {
+    color: #ff9800;
+    margin-right: 0.5rem;
+}
+
+.time {
+    position: absolute;
+    margin-top: 0.5rem;
+}
+
+.place {
+    position: absolute;
+    right: 0;
+
+}
+
+.position-ex {
+    margin-top: 3rem;
+    color: var(--black-color);
+    font-weight: bold;
+    font-size: 1.3rem;
+    margin-bottom: 0.5rem;
+}

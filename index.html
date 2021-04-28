@@ -1,0 +1,402 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HRM System</title>
+    <link rel="stylesheet" href="./css/main.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;700&display=swap" rel="stylesheet">
+
+</head>
+<body>
+    <div class="app">
+        <div class="slidebar">
+            <div class="logo">
+                <img src="./img/logo.jpg" alt="logo">
+            </div>
+
+            <div class="nav">
+                <div class="nav__title">Tools</div>
+                <ul class="nav__list">
+                    <li class="nav__item">
+                        <i class="fab fa-windows nav__item-icon"></i>
+                        <a href="#" class="nav__link">
+                            Dashboard
+                        </a>
+                    </li>
+                    <li class="nav__item">
+                        <i class="fab fa-buffer nav__item-icon"></i>
+                        <a href="#" class="nav__link">
+                            Offers
+                        </a>
+                    </li>
+                    <li class="nav__item">
+                        <i class="fas fa-user-alt nav__item-icon"></i>
+                        <a href="./candidate-profile.html" class="nav__link">
+                            People
+                        </a>
+                    </li>
+                    <li class="nav__item">
+                        <i class="fas fa-chart-bar nav__item-icon"></i>
+                        <a href="#" class="nav__link">
+                            Statistics
+                        </a>
+                    </li>
+                    <li class="nav__item">
+                        <i class="fas fa-file-alt nav__item-icon"></i>
+                        <a href="#" class="nav__link">
+                            Documents
+                        </a>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="nav">
+                <div class="nav__title">Other</div>
+                <ul class="nav__list">
+                    <li class="nav__item">
+                        <i class="fas fa-comment-dots nav__item-icon"></i>
+                        <a href="#" class="nav__link">
+                            Chat
+                        </a>
+                        <div class="chat-notification">5</div>
+                    </li>
+                    <li class="nav__item">
+                        <i class="fas fa-info-circle nav__item-icon"></i>
+                        <a href="#" class="nav__link">
+                            Support
+                        </a>
+                    </li>
+                    <li class="nav__item">
+                        <i class="fas fa-calendar-alt nav__item-icon"></i>
+                        <a href="#" class="nav__link">
+                            Calendar
+                        </a>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="admin">
+                <div class="admin__avt"></div>
+                <span class="admin__name">Mr. Owen Brady</span>
+                <span class="position">Admin</span>
+            </div>
+        </div>
+
+        <div class="main">
+            <div class="statistics">
+                <h4 class="statistics__title">You need to hire</h4>
+                <a href="#" class="statistics__view">View all &RightArrow;</a>
+
+                <div class="statistics__list">
+                    <div class="statistics__box">
+                        <span class="statistics__num">2</span>
+                        <span class="statistics__position">Project manager</span>
+                        <span class="statistics__amount">10 condidates</span>
+
+                        <div class="single-chart">
+                            <svg viewBox="0 0 36 36" class="circular-chart orange">
+                              <path class="circle-bg"
+                                d="M18 2.0845
+                                  a 15.9155 15.9155 0 0 1 0 31.831
+                                  a 15.9155 15.9155 0 0 1 0 -31.831"
+                              />
+                              <path class="circle"
+                                stroke-dasharray="75, 100"
+                                d="M18 2.0845
+                                  a 15.9155 15.9155 0 0 1 0 31.831
+                                  a 15.9155 15.9155 0 0 1 0 -31.831"
+                              />
+                              <text x="18" y="20.35" class="percentage">75%</text>
+                            </svg>
+                        </div>
+                    </div>
+
+                    <div class="statistics__box">
+                        <span class="statistics__num">1</span>
+                        <span class="statistics__position">Senior UI/UX Designer</span>
+                        <span class="statistics__amount">3 condidates</span>
+
+                        <div class="single-chart">
+                            <svg viewBox="0 0 36 36" class="circular-chart grey">
+                              <path class="circle-bg"
+                                d="M18 2.0845
+                                  a 15.9155 15.9155 0 0 1 0 31.831
+                                  a 15.9155 15.9155 0 0 1 0 -31.831"
+                              />
+                              <path class="circle"
+                                stroke-dasharray="0, 100"
+                                d="M18 2.0845
+                                  a 15.9155 15.9155 0 0 1 0 31.831
+                                  a 15.9155 15.9155 0 0 1 0 -31.831"
+                              />
+                              <text x="18" y="20.35" class="percentage">0%</text>
+                            </svg>
+                        </div>
+                    </div>
+
+                    <div class="statistics__box">
+                        <span class="statistics__num">3</span>
+                        <span class="statistics__position">Content manager</span>
+                        <span class="statistics__amount">7 condidates</span>
+
+                        <div class="single-chart">
+                            <svg viewBox="0 0 36 36" class="circular-chart green">
+                              <path class="circle-bg"
+                                d="M18 2.0845
+                                  a 15.9155 15.9155 0 0 1 0 31.831
+                                  a 15.9155 15.9155 0 0 1 0 -31.831"
+                              />
+                              <path class="circle"
+                                stroke-dasharray="50, 100"
+                                d="M18 2.0845
+                                  a 15.9155 15.9155 0 0 1 0 31.831
+                                  a 15.9155 15.9155 0 0 1 0 -31.831"
+                              />
+                              <text x="18" y="20.35" class="percentage">50%</text>
+                            </svg>
+                        </div>
+                    </div>
+
+                    <div class="statistics__box">
+                        <span class="statistics__num">8</span>
+                        <span class="statistics__position">JavaScript Developer</span>
+                        <span class="statistics__amount">21 condidates</span>
+
+                        <div class="single-chart">
+                            <svg viewBox="0 0 36 36" class="circular-chart green">
+                              <path class="circle-bg"
+                                d="M18 2.0845
+                                  a 15.9155 15.9155 0 0 1 0 31.831
+                                  a 15.9155 15.9155 0 0 1 0 -31.831"
+                              />
+                              <path class="circle"
+                                stroke-dasharray="65, 100"
+                                d="M18 2.0845
+                                  a 15.9155 15.9155 0 0 1 0 31.831
+                                  a 15.9155 15.9155 0 0 1 0 -31.831"
+                              />
+                              <text x="18" y="20.35" class="percentage">65%</text>
+                            </svg>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="filter">
+                <h4 class="filter__title">83 Candidates</h4>
+                <a href="#" class="filter__clear">Clear results</a>
+                <div class="filter__box">
+                    <div class="filter__search filter__box-item">
+                        <i class="fas fa-search"></i>
+                        <input type="text" placeholder="Search">
+                    </div>
+                    <div class="filter__position filter__box-item">
+                        <input type="text" placeholder="Position">
+                        <i class="fas fa-user-friends"></i>
+                    </div>
+                    <div class="filter__more filter__box-item">
+                        <input type="text" placeholder="More">
+                        <i class="fas fa-cog"></i>
+                    </div>
+                </div>
+            </div>
+
+            <div class="candidates__list">
+                <div class="candidates__item">
+                    <div class="candidates__avt"></div>
+                    <a href="#">
+                        <i class="fas fa-ellipsis-v candidates__seting"></i>
+                    </a>
+                    <p class="candidates__name">Elmer Cobb</p>
+                    <p class="candidates__position">.Net Developer</p>
+                    <div class="candidates__more">
+                        <a class="candidates__link" href="#">
+                            <i class="fas fa-heart"></i>
+                        </a>
+                        <a class="candidates__link" href="#">
+                            <i class="fas fa-calendar-alt"></i>
+                        </a>
+                        <a class="candidates__link" href="#">
+                            <i class="fas fa-comment-dots"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="candidates__item">
+                    <div class="candidates__avt"></div>
+                    <a href="#">
+                        <i class="fas fa-ellipsis-v candidates__seting"></i>
+                    </a>
+                    <p class="candidates__name">Wayne Bush</p>
+                    <p class="candidates__position">Project Manager</p>
+                    <div class="candidates__more">
+                        <a class="candidates__link" href="#">
+                            <i class="fas fa-heart"></i>
+                        </a>
+                        <a class="candidates__link" href="#">
+                            <i class="fas fa-calendar-alt"></i>
+                        </a>
+                        <a class="candidates__link" href="#">
+                            <i class="fas fa-comment-dots"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="candidates__item">
+                    <div class="candidates__avt"></div>
+                    <a href="#">
+                        <i class="fas fa-ellipsis-v candidates__seting"></i>
+                    </a>
+                    <p class="candidates__name">Estelle Mills</p>
+                    <p class="candidates__position">Middle Coppywriter</p>
+                    <div class="candidates__more">
+                        <a class="candidates__link" href="#">
+                            <i class="fas fa-heart"></i>
+                        </a>
+                        <a class="candidates__link" href="#">
+                            <i class="fas fa-calendar-alt"></i>
+                        </a>
+                        <a class="candidates__link" href="#">
+                            <i class="fas fa-comment-dots"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="candidates__item">
+                    <div class="candidates__avt"></div>
+                    <a href="#">
+                        <i class="fas fa-ellipsis-v candidates__seting"></i>
+                    </a>
+                    <p class="candidates__name">Vera Ramirez</p>
+                    <p class="candidates__position">Business Ânlyst</p>
+                    <div class="candidates__more">
+                        <a class="candidates__link" href="#">
+                            <i class="fas fa-heart"></i>
+                        </a>
+                        <a class="candidates__link" href="#">
+                            <i class="fas fa-calendar-alt"></i>
+                        </a>
+                        <a class="candidates__link" href="#">
+                            <i class="fas fa-comment-dots"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="candidates__item">
+                    <div class="candidates__avt"></div>
+                    <a href="#">
+                        <i class="fas fa-ellipsis-v candidates__seting"></i>
+                    </a>
+                    <p class="candidates__name">Vernon Simpson</p>
+                    <p class="candidates__position">Front-end Developer</p>
+                    <div class="candidates__more">
+                        <a class="candidates__link" href="#">
+                            <i class="fas fa-heart"></i>
+                        </a>
+                        <a class="candidates__link" href="#">
+                            <i class="fas fa-calendar-alt"></i>
+                        </a>
+                        <a class="candidates__link" href="#">
+                            <i class="fas fa-comment-dots"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="candidates__item">
+                    <div class="candidates__avt"></div>
+                    <a href="#">
+                        <i class="fas fa-ellipsis-v candidates__seting"></i>
+                    </a>
+                    <p class="candidates__name">Mittie Medina</p>
+                    <p class="candidates__position">.Net Developer</p>
+                    <div class="candidates__more">
+                        <a class="candidates__link" href="#">
+                            <i class="fas fa-heart"></i>
+                        </a>
+                        <a class="candidates__link" href="#">
+                            <i class="fas fa-calendar-alt"></i>
+                        </a>
+                        <a class="candidates__link" href="#">
+                            <i class="fas fa-comment-dots"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="calendar">
+            <h4 class="calendar__title">Calendar</h4>
+            <div class="calendar__icon">
+                <i class="fas fa-calendar-alt"></i>
+            </div>
+
+            <div class="timeline">
+                <span class="timeline__date">02 February</span>
+                <i class="fas fa-ellipsis-v timeline__seting"></i>
+
+                <div class="timeline__item">
+                    <span class="timeline__hours">09:00</span>
+                    <div class="dash"></div>
+                    <span class="timeline__job-position">UX Designer</span>
+                    <span class="timeline__work">Tech interview</span>
+                </div>
+
+                <div class="timeline__item">
+                    <span class="timeline__hours">10:00</span>
+                    <div class="dash"></div>
+                    <span class="timeline__job-position">Node js Developer</span>
+                    <span class="timeline__work">Resume review</span>
+                </div>
+            </div>
+
+            <div class="timeline">
+                <span class="timeline__date">11 February</span>
+                <i class="fas fa-ellipsis-v timeline__seting"></i>
+
+                <div class="timeline__item">
+                    <span class="timeline__hours">09:00</span>
+                    <div class="dash"></div>
+                    <span class="timeline__job-position">QA Engineer</span>
+                    <span class="timeline__work">Send test task</span>
+                </div>
+
+                <div class="timeline__item">
+                    <span class="timeline__hours">11:00</span>
+                    <div class="dash"></div>
+                    <span class="timeline__job-position">Backend Developer</span>
+                    <span class="timeline__work">Meeting</span>
+                </div>
+
+                <div class="timeline__item">
+                    <span class="timeline__hours">13:00</span>
+                    <div class="dash"></div>
+                    <span class="timeline__job-position">Front-end Developer</span>
+                    <span class="timeline__work">Final interview</span>
+                </div>
+            </div>
+
+            <div class="timeline">
+                <span class="timeline__date">02 February</span>
+                <i class="fas fa-ellipsis-v timeline__seting"></i>
+
+                <div class="timeline__item">
+                    <span class="timeline__hours">08:30</span>
+                    <div class="dash"></div>
+                    <span class="timeline__job-position">UI Designer</span>
+                    <span class="timeline__work">Platform concept</span>
+                </div>
+
+                <div class="timeline__item">
+                    <span class="timeline__hours">10:00</span>
+                    <div class="dash"></div>
+                    <span class="timeline__job-position">Maketing</span>
+                    <span class="timeline__work">2 post for instagram</span>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
